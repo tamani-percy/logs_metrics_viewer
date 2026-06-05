@@ -1,0 +1,14 @@
+services:
+  frontend:
+    path: ./frontend
+    runtime: node
+    build: pnpm run build
+    start: pnpm start
+    port: 5173
+
+  backend:
+    path: ./backend
+    runtime: java
+    build: ./mvnw package -DskipTests
+    start: java -jar target/*.jar
+    port: 8080

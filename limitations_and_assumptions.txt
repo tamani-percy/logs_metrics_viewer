@@ -1,0 +1,5 @@
+LIMITATIONS
+
+1. Working with randomly generated data means that some generated pods, containers, or resources will not have any logs in them. This means when filtering in the Frontend, it might take a while to find data.
+
+2. Because the data is randomly generated every time the backend is started/restarted, the seed data may not be identical to the one attached in the email.
