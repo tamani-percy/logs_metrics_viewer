@@ -1,0 +1,26 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+@import "@nuxt/ui";
+@import "tw-animate-css";
+
+@theme {
+    --font-sans: "Space Grotsek", sans-serif;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+    @font-face {
+        font-family: 'Space Grotsek';
+        src: url('@/assets/fonts/SpaceGrotesk-Regular.ttf') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+
+.dark {
+    --ui-bg: black;
+}

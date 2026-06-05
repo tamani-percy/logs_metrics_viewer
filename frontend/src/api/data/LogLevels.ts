@@ -1,0 +1,1 @@
+export const LogLevels: string[] = ['INFO', 'WARN', 'ERROR']
