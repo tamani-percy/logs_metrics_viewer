@@ -2,9 +2,9 @@ services:
   frontend:
     path: ./frontend
     runtime: node
-    build: pnpm run build
-    start: pnpm start
-    port: 5173
+    build: pnpm install && pnpm run build
+    start: pnpm preview
+    port: 4173
 
   backend:
     path: ./backend
